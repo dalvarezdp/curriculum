@@ -40,22 +40,159 @@
 
     <main>
         <section id="quien-soy">
-
+            <header>
+                <h2>Quien soy</h2>
+            </header>
+            <article>
+                <div class="my-photo">
+                    <figure class="perfil-photo">
+                        <img src="images/alfred.jpg" alt="Foto sobre mi">
+                        <figcaption class="photo-name">
+                            <small>David Álvarez</small>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="my-info">
+                    <p><strong>Dirección: </strong> Plaza Pedro Del Rio, 9, 8 izq, 15128, Madrid, España</p>
+                    <p><strong>Teléfono: </strong> 627252581</p>
+                    <p><strong>Email: </strong> DavidAlvarez@gmail.com</p>
+                    <p><strong>Github: </strong> https://github.com/david11988</p>
+                    <p><strong>Twitter: </strong> david11988</p>
+                    <p><strong>Fecha de nacimiento: </strong> 11/09/1988</p>
+                </div>
+            </article>
         </section>
-        <section id="estudios">
 
+
+        <section id="estudios">
+            <header>
+                <h2>Estudios</h2>
+            </header>
+            <article class="studies-item">
+                <div class="my-studies">
+                    <h3>Grado en Ingeniería Informática</h3>
+                    <p>Escuela Politécnica de Córdoba</p>
+                    <span>Septiembre 2010 - Actualmente</span>
+                </div>
+            </article>
+            <article class="studies-item">
+                <div class="my-studies">
+                    <h3>Certificación CISCO CCNA Exploration</h3>
+                    <p>Universidad de Córdoba</p>
+                    <span>Febrero 2013 – Junio 2013</span>
+                </div>
+            </article>
+            <article class="studies-item">
+                <div class="my-studies">
+                    <h3>FP Técnico Superior en Administración Sistemas Informáticos</h3>
+                    <p>I.E.S. Francisco de los Ríos (Fernán-Núñez)</p>
+                    <span>Septiembre 2007 – Junio 2009</span>
+                </div>
+            </article>
         </section>
         <section id="experiencia">
-
+            <header>
+                <h2>Experiencia</h2>
+            </header>
+            <article class="job-item">
+                <div class="my-job">
+                    <h3>Desarrollador de Software</h3>
+                    <p><strong>Indra Software Labs</strong> (A Coruña) - Octubre 2015 – Actualidad 2016</p>
+                    <p>Encargado de Singleview y el sistema de facturación utilizado en R. Haciendo uso de PL/SQL para Oracle 11g como DBA.</p>
+                    <strong>Empleado</strong>
+                </div>
+            </article>
+            <article class="job-item">
+                <div class="my-job">
+                    <h3>Programador Multidisciplinar</h3>
+                    <p><strong>IOT Partners </strong> (Vigo, Pontevedra) - Abril 2015 – Septiembre 2015</p>
+                    <p>Encargado del Análisis y Diseño del los primeros prototipos de una aplicación que aún se encuentra en desarrollo para Android. Creación de API mediante procedimientos almacenados en MySQL para ser utilizados tanto en un sistema desarrollado
+                        con Symphony como para posteriormente crear mediante Django diversos módulos que utiliza dicha plataforma en un proyecto con Vodafone.</p>
+                    <strong>Empleado</strong>
+                </div>
+            </article>
+            <article class="job-item">
+                <div class="my-job">
+                    <h3>Responsable de centro Guadalinfo</h3>
+                    <p><strong>Ayuntamiento de Santaella </strong> (Córdoba) - Agosto 2013 – Septiembre 2013</p>
+                    <p>Formador sobre el uso de las nuevas tecnologías en ámbito doméstico. Sobre OpenOffice, Dropbox, Navegadores web, manejo a nivel de usuario sobre entorno Guadalinex.</p>
+                    <strong>Empleado</strong>
+                </div>
+            </article>
+            <article class="job-item">
+                <div class="my-job">
+                    <h3>Técnico superior Departamento Informática</h3>
+                    <p><strong>Redes y Componentes S.L </strong> (Puente Genil, Córdoba) - Abril 2010 – Julio 2010</p>
+                    <p>Reparación y configuración de equipos informáticos e infraestructuras de red.</p>
+                    <strong>Prácticas</strong>
+                </div>
+            </article>
         </section>
         <section id="sobre-mi">
-
+            <header>
+                <h2>Video sobre mis intereses</h2>
+            </header>
+            <div class="video">
+                <video id="video-interes" width="550" height="300" controls>
+                <source src="video/batman-lego.mp4" type="video/mp4">
+              </video>
+            </div>
         </section>
         <section id="contacto">
+            <header>
+                <h2>Contacta conmigo</h2>
+            </header>
+            <div class="col-6">
+                <div id="googleMap"></div>
+            </div>
 
+            <div class="col-6">
+                <form id="form-contact" class="form" name="contact-me" method="get" novalidate>
+                    <div class="form-row">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="name@company.com" pattern="[A-Za-Z0-9\.\+]+@[A-Za-Z0-9]+\.[A-Za-Z0-9\.]+" required>
+                    </div>
+
+                    <div class="form-row">
+                        <span>¿Donde me has conocido?</span>
+                        <label for="facebook">Facebook</label>
+                        <input type="radio" id="facebook" name="opciones_conocerse" value="yes" required>
+                        <label for="google">Google</label>
+                        <input type="radio" id="google" name="opciones_conocerse" value="no" required>
+                        <label for="github">Github</label>
+                        <input type="radio" id="github" name="opciones_conocerse" value="no" required>
+                        <label for="twitter">Twitter</label>
+                        <input type="radio" id="twitter" name="opciones_conocerse" value="no" required>
+                        <label for="otros">Otros</label>
+                        <input type="radio" id="otros" name="opciones_conocerse" value="no" required>
+                    </div>
+
+
+                    <div class="form-row">
+                        <label for="num_contacto">Número de contacto</label>
+                        <input type="number" id="num_contacto" name="num_contacto">
+                    </div>
+
+                    <div class="form-row">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" rows="8" cols="80"></textarea>
+                    </div>
+
+
+                    <div class="form-row">
+                        <button type="submit" id="enviar">Enviar</button>
+                    </div>
+                </form>
+            </div>
         </section>
 
     </main>
+    <footer class="footer">David Álvarez &copy; 2016 KeepCoding.io</footer>
 </body>
 
 </html>
