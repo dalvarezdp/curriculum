@@ -1,0 +1,237 @@
+/* referencia de colores */
+
+.dark-primary-color {
+    background: #455A64;
+}
+
+.default-primary-color {
+    background: #607D8B;
+}
+
+.light-primary-color {
+    background: #CFD8DC;
+}
+
+.text-primary-color {
+    color: #FFFFFF;
+}
+
+.accent-color {
+    background: #FF5722;
+}
+
+.primary-text-color {
+    color: #212121;
+}
+
+.secondary-text-color {
+    color: #757575;
+}
+
+.divider-color {
+    border-color: #BDBDBD;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+}
+
+h2 {
+    color: #455A64;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background: #455A64;
+    position: fixed;
+    top: 0;
+}
+
+.navbar>.navbar-list {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+    float: right;
+    font-size: 0;
+}
+
+.navbar>.navbar-list>.navbar-item {
+    display: inline-block;
+    font-size: 16px;
+}
+
+.navbar>.navbar-list>.navbar-item>.navbar-link {
+    display: inline-block;
+    text-decoration: none;
+    padding: 20px;
+    color: #CFD8DC;
+    transition: all 0.5s;
+}
+
+.navbar>.navbar-list>.navbar-item.active>.navbar-link {
+    color: #FFFFFF;
+    background-color: #607D8B;
+}
+
+.navbar>.navbar-list>.navbar-item>.navbar-link:hover {
+    color: #FFFFFF;
+    background-color: #607D8B;
+}
+
+.header>.title {
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 70px;
+    /*visibility: hidden;
+    animation: titleAnimation 2s forwards;
+    animation-delay: 0.5s;*/
+}
+
+.header>.title-cite {
+    position: absolute;
+    top: 50%;
+    color: #CFD8DC;
+    width: 100%;
+    text-align: center;
+    font-size: 34px;
+    /*opacity: 0;
+    animation: subtitleAnimation 3s forwards;
+    animation-delay: 0.8s;*/
+}
+
+.header>.title-img {
+    width: 100%;
+    background-image: url("../images/portada.png");
+    height: 100vh;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: all 0.5s;
+}
+
+.section-content {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.row-flex {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.flex-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.quien-soy>.row-flex>.my-photo {
+    align-items: flex-end;
+    margin-right: 3%;
+}
+
+.quien-soy>.row-flex>.my-info {
+    align-items: flex-start;
+    margin-left: 3%;
+}
+
+.quien-soy>.row-flex>.my-info ul {
+    padding: 0px;
+}
+
+.quien-soy>.row-flex>.my-info li {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.estudios>.row-flex>.studies-info {
+    align-items: flex-end;
+    margin-right: 3%;
+}
+
+.estudios>.row-flex>.studies-img {
+    align-items: flex-start;
+    margin-left: 3%;
+}
+
+.estudios>.row-flex>.studies-info ul {
+    padding: 0px;
+}
+
+.estudios>.row-flex>.studies-info li {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    text-decoration: none;
+    list-style-type: none;
+    text-align: right;
+}
+
+.estudios>.row-flex>.studies-info>ul>li>.my-studies p {
+    color: #FFFFFF;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding: 8px 15px;
+    margin: 0 0 30px 0;
+    box-shadow: inset 40em 0 0 0 #ED5565;
+}
+
+.estudios>.row-flex>.studies-info>ul>li>.my-studies h3 {
+    font: 25px 'Open Sans', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #757575;
+    margin: 0px;
+}
+
+.estudios>.row-flex>.studies-info>ul>li>.my-studies h4 {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: normal;
+    color: #313131;
+    margin-bottom: 15px;
+    font-family: 'Raleway', sans-serif;
+    display: block;
+    -webkit-margin-before: 1.33em;
+    -webkit-margin-after: 1.33em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+
+.perfil-photo img {
+    height: 250px;
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+.container {}
+
+.clearfix:after {
+    content: " ";
+    /* Older browser do not support empty content */
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}

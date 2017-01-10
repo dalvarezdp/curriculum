@@ -5,13 +5,14 @@
     <meta charset="utf-8">
     <title>Currículum</title>
     <link rel="stylesheet" href="style/style.css">
+    <link href="http://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
     <header class="header">
-        <h1 class="title">Currículum</h1>
+        <h1 class="title">Currículum Vitae</h1>
         <!-- <img src="images/batman.jpg" alt="" class="title-img"> -->
-        <div id="title-img-animation" class="title-img"></div>
+        <div id="title-img" class="title-img"></div>
         <p class="title-cite">David Álvarez del Pino</p>
     </header>
 
@@ -38,57 +39,74 @@
         </ul>
     </nav>
 
-    <main>
-        <section id="quien-soy">
-            <header>
-                <h2>Quien soy</h2>
-            </header>
-            <article>
-                <div class="my-photo">
+    <main class="container">
+        <section id="quien-soy" class="quien-soy clearfix section-content">
+            <div class="row-flex">
+                <header class="flex-item">
+                    <h2>Quien soy</h2>
+                </header>
+            </div>
+            <div class="row-flex">
+                <div class="my-photo flex-item">
                     <figure class="perfil-photo">
                         <img src="images/alfred.jpg" alt="Foto sobre mi">
-                        <figcaption class="photo-name">
-                            <small>David Álvarez</small>
-                        </figcaption>
                     </figure>
                 </div>
-                <div class="my-info">
-                    <p><strong>Dirección: </strong> Plaza Pedro Del Rio, 9, 8 izq, 15128, Madrid, España</p>
-                    <p><strong>Teléfono: </strong> 627252581</p>
-                    <p><strong>Email: </strong> DavidAlvarez@gmail.com</p>
-                    <p><strong>Github: </strong> https://github.com/david11988</p>
-                    <p><strong>Twitter: </strong> david11988</p>
-                    <p><strong>Fecha de nacimiento: </strong> 11/09/1988</p>
+                <div class="my-info flex-item">
+                    <ul>
+                        <li><strong>Dirección: </strong> Plaza Pedro Del Rio, 9, 8 izq, 15128, Madrid, España</li>
+                        <li><strong>Teléfono: </strong> 627252581</li>
+                        <li><strong>Email: </strong> DavidAlvarez@gmail.com</li>
+                        <li><strong>Github: </strong> https://github.com/david11988</li>
+                        <li><strong>Twitter: </strong> david11988</li>
+                        <li><strong>Fecha de nacimiento: </strong> 11/09/1988</li>
+                    </ul>
                 </div>
-            </article>
+            </div>
+
         </section>
 
 
-        <section id="estudios">
-            <header>
-                <h2>Estudios</h2>
-            </header>
-            <article class="studies-item">
-                <div class="my-studies">
-                    <h3>Grado en Ingeniería Informática</h3>
-                    <p>Escuela Politécnica de Córdoba</p>
-                    <span>Septiembre 2010 - Actualmente</span>
+        <section id="estudios" class="estudios clearfix section-content">
+            <div class="row-flex">
+                <header class="flex-item">
+                    <h2>Estudios</h2>
+                </header>
+            </div>
+            <div class="row-flex">
+                <div class="studies-info flex-item">
+                    <ul>
+                        <li>
+                            <div class="my-studies">
+                                <p>Septiembre 2010 - Actualmente</p>
+                                <h3>Escuela Politécnica de Córdoba</h3>
+                                <h4>Grado en Ingeniería Informática</h4>
+                            </div>
+                            <hr>
+                        </li>
+                        <li>
+                            <div class="my-studies">
+                                <p>Febrero 2013 – Junio 2013</p>
+                                <h3>Universidad de Córdoba</h3>
+                                <h4>Certificación CISCO CCNA Exploration</h4>
+                            </div>
+                            <hr>
+                        </li>
+                        <li>
+                            <div class="my-studies">
+                                <p>Septiembre 2007 – Junio 2009</p>
+                                <h3>I.E.S. Francisco de los Ríos</h3>
+                                <h4>FP Técnico Superior en Administración Sistemas Informáticos</h4>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-            </article>
-            <article class="studies-item">
-                <div class="my-studies">
-                    <h3>Certificación CISCO CCNA Exploration</h3>
-                    <p>Universidad de Córdoba</p>
-                    <span>Febrero 2013 – Junio 2013</span>
+                <div class="studies-img flex-item">
+                    <figure class="perfil-photo">
+                        <img src="images/alfred.jpg" alt="Foto sobre mi">
+                    </figure>
                 </div>
-            </article>
-            <article class="studies-item">
-                <div class="my-studies">
-                    <h3>FP Técnico Superior en Administración Sistemas Informáticos</h3>
-                    <p>I.E.S. Francisco de los Ríos (Fernán-Núñez)</p>
-                    <span>Septiembre 2007 – Junio 2009</span>
-                </div>
-            </article>
+            </div>
         </section>
         <section id="experiencia">
             <header>
@@ -194,5 +212,7 @@
     </main>
     <footer class="footer">David Álvarez &copy; 2016 KeepCoding.io</footer>
 </body>
+
+</html>
 
 </html>
