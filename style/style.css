@@ -45,6 +45,8 @@ html, body {
 
 h2 {
     color: #455A64;
+    animation: nomSecionAnimation 2s infinite;
+    animation-delay: 0.5s;
 }
 
 .navbar {
@@ -95,9 +97,6 @@ h2 {
     color: #FFFFFF;
     text-align: center;
     font-size: 70px;
-    /*visibility: hidden;
-    animation: titleAnimation 2s forwards;
-    animation-delay: 0.5s;*/
 }
 
 .header>.title-cite {
@@ -107,9 +106,6 @@ h2 {
     width: 100%;
     text-align: center;
     font-size: 34px;
-    /*opacity: 0;
-    animation: subtitleAnimation 3s forwards;
-    animation-delay: 0.8s;*/
 }
 
 .header>.title-img {
@@ -295,6 +291,8 @@ Seccion Experiencia
     height: 250px;
     max-width: 100%;
     border-radius: 50%;
+    animation: deshacerCurvaZoom 5s forwards;
+    animation-delay: 0.5s;
 }
 
 
@@ -323,7 +321,64 @@ input[type=radio] {
     color: #455A64;
 }
 
-.container {}
+
+/*
+Animaciones CSS3
+*/
+
+@keyframes nomSecionAnimation {
+    10% {
+        transform: translateX(10px);
+    }
+    30% {
+        transform: translateX(-10px);
+    }
+    50% {
+        transform: translateX(5px);
+    }
+    60% {
+        transform: translateX(-5px);
+    }
+    80% {
+        transform: translateX(3px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes deshacerCurvaZoom {
+    10% {
+        border-radius: 50%;
+    }
+    20% {
+        border-radius: 40%;
+    }
+    30% {
+        border-radius: 30%;
+    }
+    40% {
+        border-radius: 15%;
+    }
+    50% {
+        border-radius: 5%;
+    }
+    60% {
+        border-radius: 15%;
+    }
+    70% {
+        border-radius: 30%;
+    }
+    80% {
+        border-radius: 40%;
+    }
+    90% {
+        border-radius: 45%;
+    }
+    100% {
+        border-radius: 50%;
+    }
+}
 
 .footer {
     width: 100%;

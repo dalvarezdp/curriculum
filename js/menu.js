@@ -1,5 +1,5 @@
 /*
-Usando javascript
+Usando jquery
 */
 var navbarItems = $('.navbar-item');
 
