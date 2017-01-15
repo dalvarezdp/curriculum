@@ -44,13 +44,13 @@
         <section id="quien-soy" class="quien-soy clearfix section-content">
             <div class="row-flex">
                 <header class="flex-item">
-                    <h2>Quien soy</h2>
+                    <h2>¿Quién soy?</h2>
                 </header>
             </div>
             <div class="row-flex">
                 <div class="my-photo flex-item">
                     <figure class="perfil-photo">
-                        <img src="images/alfred.jpg" alt="Foto sobre mi">
+                        <img src="images/perfil.png" alt="Foto sobre mi">
                     </figure>
                 </div>
                 <div class="my-info flex-item">
@@ -103,7 +103,7 @@
                 </div>
                 <div class="studies-img flex-item">
                     <figure class="perfil-photo">
-                        <img src="images/alfred.jpg" alt="Foto sobre mi">
+                        <img src="images/studies.jpg" alt="Foto sobre mi">
                     </figure>
                 </div>
             </div>
@@ -120,7 +120,7 @@
             <div class="row-flex">
                 <div class="job-img flex-item">
                     <figure class="perfil-photo">
-                        <img src="images/alfred.jpg" alt="Foto sobre mi">
+                        <img src="images/jobs.jpg" alt="Foto sobre mi">
                     </figure>
                 </div>
                 <div class="job-info flex-item">
@@ -204,7 +204,7 @@
                         </div>
 
                         <div class="form-row">
-                            <p>¿Donde me has conocido?</p>
+                            <p>¿Dónde me has conocido?</p>
                             <input type="radio" id="facebook" name="opciones_conocerse" value="no" required>Facebook
                             <input type="radio" id="google" name="opciones_conocerse" value="no" required>Google
                             <input type="radio" id="github" name="opciones_conocerse" value="no" required>Github
@@ -232,7 +232,33 @@
 
         </section>
 
+        <section id="etiquetas" class="etiquetas clearfix section-content">
+            <div class="row-flex">
+                <header class="flex-item">
+                    <h2>Etiquetas</h2>
+                </header>
+            </div>
+            <div class="row-flex">
+                <div class="etiquetas-img flex-item-b">
+                    <h3>Añadir nueva etiqueta</h3>
+                    <form>
+                        <input type="text" id="nuevaTag" name="name" placeholder="Nueva etiqueta..." required>
+                        <br>
+                        <br>
+                        <button id="sendNewTags">Añadir</button>
+                    </form>
+                </div>
 
+                <div class="etiquetas-info flex-item-b">
+                    <h3>Listado de etiquetas</h3>
+                    <div>
+                        <ul id="tagsContainer"></ul>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
 
     </main>
 
@@ -241,6 +267,7 @@
 
 <script src="js/menu.js"></script>
 <script src="js/form.js"></script>
+<script src="js/tag.js"></script>
 
 </html>
 
